@@ -4,9 +4,4 @@
 
 [build.environment]
   NPM_FLAGS = "--legacy-peer-deps"
-
-# Этот блок полностью отключает автоматический плагин Next.js
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    disable = true
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
