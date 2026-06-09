@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 34 100% 98%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --primary: 24 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 50 100% 52%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 30 32% 93%;
+  --muted-foreground: 222 15% 38%;
+  --accent: 158 64% 42%;
+  --accent-foreground: 0 0% 100%;
+  --border: 28 24% 86%;
+  --input: 28 24% 86%;
+  --ring: 24 100% 50%;
+}
+
+.dark {
+  --background: 220 18% 10%;
+  --foreground: 32 100% 96%;
+  --card: 220 16% 14%;
+  --card-foreground: 32 100% 96%;
+  --primary: 24 100% 54%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 48 92% 55%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 220 14% 20%;
+  --muted-foreground: 30 18% 76%;
+  --accent: 158 58% 46%;
+  --accent-foreground: 0 0% 100%;
+  --border: 220 13% 25%;
+  --input: 220 13% 25%;
+  --ring: 24 100% 54%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 6%, rgba(255, 105, 0, 0.11), transparent 28rem),
+    linear-gradient(180deg, hsl(var(--background)), hsl(var(--background)));
+  color: hsl(var(--foreground));
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.product-art {
+  background:
+    radial-gradient(circle at 50% 48%, rgba(255, 224, 148, 0.95) 0 31%, transparent 32%),
+    conic-gradient(from 0deg, #c53030 0 20deg, #f97316 20deg 55deg, #15803d 55deg 75deg, #f8fafc 75deg 100deg, #c53030 100deg 130deg, #f97316 130deg 170deg, #15803d 170deg 190deg, #f8fafc 190deg 230deg, #c53030 230deg 260deg, #f97316 260deg 310deg, #15803d 310deg 340deg, #f8fafc 340deg 360deg);
+}
+
+.drink-art {
+  background:
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.7) 25% 30%, transparent 31%),
+    linear-gradient(180deg, #f97316, #facc15 58%, #22c55e);
+}
+
+.dessert-art {
+  background:
+    radial-gradient(circle at 50% 22%, #fff7ed 0 18%, transparent 19%),
+    linear-gradient(145deg, #7c2d12, #fb923c);
+}
